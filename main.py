@@ -23,7 +23,7 @@ pygame.display.set_caption("Pong")
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GREY = (30, 30, 30)
-LIME = (102, 156, 92)
+LIME = (102, 156, 92) #Toto je farba pozadia, ak sit o chces zmenit na GREY, tak prepis 158. riadok na win.fill(GREY)
 
 PADDLE_WIDTH, PADDLE_HEIGHT = (WIDTH//32, HEIGHT//5)
 BALL_RADIUS = WIDTH//80
