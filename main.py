@@ -103,14 +103,14 @@ def paddle_movement(keys, left_paddle, right_paddle, ball):
     
     if left_paddle.player:
         left_player = left_paddle.player.make_move(ball_info, left_paddle_info, right_paddle_info)
-        left_paddle.move(up = left_player)
+        if left_player != -1: left_paddle.move(up = left_player)
     else:
         if keys[pygame.K_w]: left_paddle.move(up = True)
         if keys[pygame.K_s]: left_paddle.move(up = False)
     
     if right_paddle.player:
         right_player = right_paddle.player.make_move(ball_info, left_paddle_info, right_paddle_info)
-        right_paddle.move(up = right_player)
+        if right_player != -1: right_paddle.move(up = right_player)
     else:
         if keys[pygame.K_UP]: right_paddle.move(up = True)
         if keys[pygame.K_DOWN]: right_paddle.move(up = False)

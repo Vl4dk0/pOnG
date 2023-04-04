@@ -72,4 +72,6 @@ class Hrac:
                 self.get_target()
                 
             return 1
-    
+        
+        #return -1 -> ostan na mieste
+        if False: return -1
